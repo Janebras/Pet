@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PetTracker - Monitore e Conecte-se com seu Pet</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 0;
+			line-height: 1.6;
+			color: #333;
+		}
+
+		.container {
+			width: 90%;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		header {
+			background: #4CAF50;
+			color: white;
+			padding: 1rem 0;
+		}
+
+		.logo {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			gap: 1.5rem;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.hero {
+			background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+			color: white;
+			padding: 4rem 0;
+			text-align: center;
+		}
+
+		.features {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 2rem;
+			padding: 2rem 0;
+		}
+
+		.feature-card {
+			background: #f4f4f4;
+			padding: 2rem;
+			border-radius: 8px;
+			text-align: center;
+		}
+
+		.feature-card i {
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+			color: #4CAF50;
+		}
+
+		.community-section {
+			background: #4CAF50;
+			color: white;
+			padding: 2rem 0;
+			text-align: center;
+		}
+
+		.community-form {
+			max-width: 600px;
+			margin: 0 auto;
+			display: flex;
+			gap: 1rem;
+			padding: 1rem;
+		}
+
+		.community-form input {
+			flex: 1;
+			padding: 0.8rem;
+			border: none;
+			border-radius: 4px;
+		}
+
+		.community-form button {
+			padding: 0.8rem 2rem;
+			background: #fff;
+			color: #4CAF50;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		footer {
+			background: #333;
+			color: white;
+			text-align: center;
+			padding: 1rem 0;
+			margin-top: 2rem;
+		}
+
+		@media (max-width: 768px) {
+			.hero {
+				padding: 2rem 0;
+			}
+
+			.features {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">🐾 PetTracker</div>
+			<nav>
+				<ul>
+					<li><a href="#home">Início</a></li>
+					<li><a href="#features">Funcionalidades</a></li>
+					<li><a href="#community">Comunidade</a></li>
+					<li><a href="#contact">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="hero" id="home">
+		<div class="container">
+			<h1>Cuide do seu Pet de Forma Inteligente</h1>
+			<p>Monitore atividades, lembre-se de vacinações e conecte-se com outros tutores</p>
+			<a href="#features" class="btn">Conheça as Funcionalidades</a>
+		</div>
+	</section>
+
+	<section class="features" id="features">
+		<div class="container">
+			<div class="feature-card">
+				<i class="fas fa-paw"></i>
+				<h3>Monitoramento de Atividades</h3>
+				<p>Acompanhe os hábitos diários do seu pet, como exercícios, sono e alimentação</p>
+			</div>
+			<div class="feature-card">
+				<i class="fas fa-syringe"></i>
+				<h3>Lembretes de Vacinação</h3>
+				<p>Receba alertas personalizados para vacinas e check-ups veterinários</p>
+			</div>
+			<div class="feature-card">
+				<i class="fas fa-users"></i>
+				<h3>Comunidade de Tutores</h3>
+				<p>Troque experiências e dicas com outros donos de pets em nosso fórum</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="community-section" id="community">
+		<div class="container">
+			<h2>Faça Parte da Nossa Comunidade</h2>
+			<p>Receba dicas exclusivas e participe de eventos para tutores</p>
+			<form class="community-form">
+				<input type="email" placeholder="Seu e-mail" required>
+				<button type="submit">Inscrever-se</button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2024 PetTracker | Todos os direitos reservados</p>
+			<div class="social-icons">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		document.querySelector('.community-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Inscrição realizada com sucesso!');
+            this.reset();
+        });
+	</script>
+</body>
+
+</html>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PetTracker - Início</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<style>
+		/* Mantenha o mesmo CSS do exemplo anterior aqui */
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">🐾 PetTracker</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="monitoramento.html">Monitoramento</a></li>
+					<li><a href="vacinacao.html">Vacinação</a></li>
+					<li><a href="comunidade.html">Comunidade</a></li>
+					<li><a href="cadastro-pet.html">Cadastrar Pet</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Mantenha o conteúdo do hero e outras seções do exemplo anterior -->
+</body>
+
+</html>
+<!-- monitoramento.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Monitoramento - PetTracker</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<style>
+		/* Mantenha o mesmo CSS do exemplo anterior aqui */
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">🐾 PetTracker</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="monitoramento.html">Monitoramento</a></li>
+					<li><a href="vacinacao.html">Vacinação</a></li>
+					<li><a href="comunidade.html">Comunidade</a></li>
+					<li><a href="cadastro-pet.html">Cadastrar Pet</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="container" style="padding: 2rem 0;">
+		<h2>Monitoramento em Tempo Real</h2>
+		<div class="activity-stats">
+			<div class="stat-card">
+				<i class="fas fa-running"></i>
+				<h3>Atividade Física</h3>
+				<p>Passos hoje: <span id="steps">2,450</span></p>
+			</div>
+			<div class="stat-card">
+				<i class="fas fa-bed"></i>
+				<h3>Sono</h3>
+				<p>Horas dormidas: <span id="sleep">12h30</span></p>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
+<!-- vacinacao.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vacinação - PetTracker</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<style>
+		/* Mantenha o mesmo CSS do exemplo anterior aqui */
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">🐾 PetTracker</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="monitoramento.html">Monitoramento</a></li>
+					<li><a href="vacinacao.html">Vacinação</a></li>
+					<li><a href="comunidade.html">Comunidade</a></li>
+					<li><a href="cadastro-pet.html">Cadastrar Pet</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="container" style="padding: 2rem 0;">
+		<h2>Calendário de Vacinação</h2>
+		<div class="vaccine-calendar">
+			<div class="vaccine-item">
+				<h3>Vacina Antirrábica</h3>
+				<p>Data: <input type="date" class="vaccine-date"></p>
+					<button class="btn">Salvar</button>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
+<!-- comunidade.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comunidade - PetTracker</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<style>
+		/* Mantenha o mesmo CSS do exemplo anterior aqui */
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">🐾 PetTracker</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="monitoramento.html">Monitoramento</a></li>
+					<li><a href="vacinacao.html">Vacinação</a></li>
+					<li><a href="comunidade.html">Comunidade</a></li>
+					<li><a href="cadastro-pet.html">Cadastrar Pet</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="container" style="padding: 2rem 0;">
+		<h2>Fórum da Comunidade</h2>
+		<div class="forum-post">
+			<div class="post-header">
+				<img src="https://via.placeholder.com/50" alt="User" class="avatar">
+				<div>
+					<h3>MariaSouza</h3>
+					<p class="post-date">22/10/2023</p>
+				</div>
+			</div>
+			<p class="post-content">Alguém sabe qual a melhor ração para filhotes de golden retriever?</p>
+			<button class="btn">Responder</button>
+		</div>
+	</section>
+</body>
+
+</html>
+<!-- cadastro-pet.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro de Pet - PetTracker</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<style>
+		/* Mantenha o mesmo CSS do exemplo anterior aqui */
+		.form-group {
+			margin-bottom: 1.5rem;
+		}
+
+		.form-group label {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+
+		.form-group input,
+		.form-group select {
+			width: 100%;
+			padding: 0.8rem;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">🐾 PetTracker</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="monitoramento.html">Monitoramento</a></li>
+					<li><a href="vacinacao.html">Vacinação</a></li>
+					<li><a href="comunidade.html">Comunidade</a></li>
+					<li><a href="cadastro-pet.html">Cadastrar Pet</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="container" style="padding: 2rem 0;">
+		<h2>Cadastro do Pet</h2>
+		<form id="petForm" class="form">
+			<div class="form-group">
+				<label for="nome">Nome do Pet</label>
+				<input type="text" id="nome" required>
+            </div>
+				<div class="form-group">
+					<label for="especie">Espécie</label>
+					<select id="especie" required>
+                    <option value="">Selecione</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                </select>
+				</div>
+				<div class="form-group">
+					<label for="raca">Raça</label>
+					<input type="text" id="raca" required>
+            </div>
+					<div class="form-group">
+						<label for="nascimento">Data de Nascimento</label>
+						<input type="date" id="nascimento" required>
+            </div>
+						<button type="submit" class="btn">Cadastrar</button>
+		</form>
+	</section>
+
+	<script>
+		document.getElementById('petForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Pet cadastrado com sucesso!');
+            this.reset();
+        });
+	</script>
+</body>
+
+</html>
